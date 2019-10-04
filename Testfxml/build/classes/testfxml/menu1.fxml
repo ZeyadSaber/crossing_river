@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfxml.Menu1Controller">
+   <children>
+      <ImageView fitHeight="528.0" fitWidth="784.0">
+         <image>
+            <Image url="@../images/rivermap.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="492.0" layoutY="207.0" mnemonicParsing="false" onAction="#Story2Entry" prefHeight="115.0" prefWidth="128.0" style="-fx-background-color: #e4d96f;" text="Story 2" textAlignment="CENTER">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="147.0" layoutY="207.0" mnemonicParsing="false" onAction="#Story1Entry" prefHeight="115.0" prefWidth="128.0" style="-fx-background-color: #e4d96f;" text="Story 1" textAlignment="CENTER">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_CENTER" layoutX="223.0" layoutY="30.0" text="River Crossing Puzzle" textFill="#1a6f11">
+         <font>
+            <Font name="Forte" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

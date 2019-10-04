@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfxml.Story1GamePlayController">
+   <children>
+      <ImageView fitHeight="807.0" fitWidth="1257.0">
+         <image>
+            <Image url="@../images/rivermap.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="boatPassenger1" fitHeight="134.0" fitWidth="101.0" layoutX="561.0" layoutY="612.0" onMouseClicked="#movetoLeft1" />
+      <ImageView fx:id="boatPassenger2" fitHeight="134.0" fitWidth="101.0" layoutX="442.0" layoutY="622.0" onMouseClicked="#movetoLeft2" />
+      <ImageView fx:id="farmerRight" fitHeight="124.0" fitWidth="89.0" layoutX="896.0" layoutY="527.0" onMouseClicked="#movefarmertoboat" />
+      <ImageView fx:id="plantRight" fitHeight="84.0" fitWidth="66.0" layoutX="1153.0" layoutY="696.0" onMouseClicked="#moveplanttoboat" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="herbevorRight" fitHeight="95.0" fitWidth="81.0" layoutX="1010.0" layoutY="542.0" onMouseClicked="#moveherbtoboat" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="carnevorRight" fitHeight="147.0" fitWidth="131.0" layoutX="1106.0" layoutY="553.0" onMouseClicked="#movecarntoboat" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="boatPassenger1Right" fitHeight="134.0" fitWidth="101.0" layoutX="941.0" layoutY="625.0" onMouseClicked="#MoveToRight1" />
+      <ImageView fx:id="boatPassenger2Right" fitHeight="134.0" fitWidth="101.0" layoutX="817.0" layoutY="637.0" onMouseClicked="#MoveToRight2" />
+      <ImageView fx:id="farmerLeft" fitHeight="134.0" fitWidth="101.0" layoutX="440.0" layoutY="517.0" onMouseClicked="#movefarmertoboat" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="carnevorLeft" fitHeight="134.0" fitWidth="117.0" layoutX="116.0" layoutY="602.0" onMouseClicked="#movecarntoboat" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plantLeft" fitHeight="79.0" fitWidth="89.0" layoutX="233.0" layoutY="597.0" onMouseClicked="#moveplanttoboat" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="herbevorLeft" fitHeight="103.0" fitWidth="101.0" layoutX="328.0" layoutY="570.0" onMouseClicked="#moveherbtoboat" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="Resetstory1" layoutX="1162.0" layoutY="250.0" mnemonicParsing="false" onAction="#Restart" prefHeight="48.0" prefWidth="81.0" style="-fx-background-radius: 2000; -fx-background-color: #BDB76B;" text="Restart" />
+      <Button fx:id="Menuofstory1" layoutX="1177.0" layoutY="10.0" mnemonicParsing="false" onAction="#Mainmenu" prefHeight="66.0" prefWidth="66.0" style="-fx-background-radius: 2000; -fx-background-color: #FF6347;" text="Menu">
+         <font>
+            <Font name="Constantia Bold Italic" size="16.0" />
+         </font></Button>
+      <Label layoutX="612.0" layoutY="384.0" prefHeight="40.0" prefWidth="57.0" text="Score:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Score" layoutX="680.0" layoutY="391.0" prefHeight="25.0" prefWidth="66.0" textAlignment="CENTER" />
+      <Label fx:id="Story1instructions" layoutX="229.0" layoutY="34.0" textAlignment="CENTER">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></Label>
+      <Button fx:id="Undo" layoutX="1186.0" layoutY="99.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="57.0" style="-fx-background-radius: 2000; -fx-background-color: #FFEBCD;" text="Undo">
+         <font>
+            <Font name="Corbel Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Redo" layoutX="1186.0" layoutY="173.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="57.0" style="-fx-background-radius: 2000; -fx-background-color: #FFEBCD;" text="Redo">
+         <font>
+            <Font name="Corbel Italic" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="boatLeft" fitHeight="79.0" fitWidth="328.0" layoutX="361.0" layoutY="708.0">
+         <image>
+            <Image url="@../images/Wood-Boat-Left.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="boatRight" fitHeight="79.0" fitWidth="328.0" layoutX="754.0" layoutY="708.0" />
+      <Button fx:id="Savestory1" layoutX="30.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#Save" prefHeight="55.0" prefWidth="66.0" style="-fx-background-radius: 2000; -fx-background-color: #00FF7F;" text="Save">
+         <font>
+            <Font name="Constantia Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="moveboat1" layoutX="1177.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#Move" prefHeight="55.0" prefWidth="66.0" style="-fx-background-radius: 2000; -fx-background-color: #CD853F;" text="Move" />
+   </children>
+</AnchorPane>

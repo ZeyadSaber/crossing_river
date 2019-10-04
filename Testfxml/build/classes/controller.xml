@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_201" class="java.beans.XMLDecoder">
+ <object class="testfxml.Story2"/>
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="testfxml.Farmer"/>
+  </void>
+  <void method="add">
+   <object class="testfxml.Farmer">
+    <void property="weight">
+     <double>80.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="testfxml.Farmer">
+    <void property="weight">
+     <double>60.0</double>
+    </void>
+   </object>
+  </void>
+ </object>
+ <object class="java.util.ArrayList"/>
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="testfxml.HerbevorusAnimal"/>
+  </void>
+  <void method="add">
+   <object class="testfxml.Farmer">
+    <void property="weight">
+     <double>40.0</double>
+    </void>
+   </object>
+  </void>
+ </object>
+ <int>1</int>
+ <boolean>false</boolean>
+ <boolean>true</boolean>
+ <boolean>false</boolean>
+</java>

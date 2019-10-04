@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfxml.Story2Controller">
+   <children>
+      <ImageView fitHeight="582.0" fitWidth="880.0">
+         <image>
+            <Image url="@../images/rivermap.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="271.0" layoutY="32.0" text="River Crossing Puzzle" textFill="#1a6f11">
+         <font>
+            <Font name="Forte" size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="Newgame2" layoutX="285.0" layoutY="176.0" mnemonicParsing="false" onAction="#openNewgame" onMouseClicked="#Newgame" prefHeight="41.0" prefWidth="333.0" style="-fx-background-color: #e4d96f;" text="New game" textAlignment="CENTER">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="Loadgame2" layoutX="285.0" layoutY="308.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="333.0" style="-fx-background-color: #e4d96f;" text="Load game" textAlignment="CENTER">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="Back2" layoutX="285.0" layoutY="441.0" mnemonicParsing="false" onAction="#Back" prefHeight="41.0" prefWidth="333.0" style="-fx-background-color: #e4d96f;" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="388.0" layoutY="88.0" text="Story 2" textFill="#1a6f11">
+         <font>
+            <Font name="Forte" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
